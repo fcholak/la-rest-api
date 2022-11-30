@@ -17,6 +17,8 @@ function routes(app: Express) {
     validateResource(createSessionSchema),
     createSessionHandler
   );
+
+  app.get("/api/sessions");
 }
 
 export default routes;
